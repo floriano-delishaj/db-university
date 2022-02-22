@@ -1,8 +1,7 @@
 -- 1. Selezionare tutti gli studenti nati nel 1990 (160)
 SELECT *
 FROM `students`
-WHERE `date_of_birth` >= '1990-01-01'
-	AND `date_of_birth` <= '1990-12-31'
+WHERE YEAR(`date_of_birth`) = 1990
 ORDER BY `date_of_birth`;
 
 -- 2. Selezionare tutti i corsi che valgono più di 10 crediti (479)
